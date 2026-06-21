@@ -6,9 +6,9 @@ py -m pip install ruff
 py -m ruff format . --check
 
 if [ $? -ne 0 ]; then
-    echo "Code formatting failed. Please fix the issues before committing."
+    echo "❌ Formatting failed. Please fix the issues before committing."
     exit 1
 fi
 
-echo "Code formatting passed. Proceeding with commit."
+echo "✅ Formatting passed."
 exit 0
