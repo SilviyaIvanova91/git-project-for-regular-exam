@@ -3,10 +3,11 @@
 echo "Running pre-commit hook..."
 
 py -m pip install ruff
-py -m ruff format . --check
+py -m ruff check .
+py -m ruff format . 
 
 if [ $? -ne 0 ]; then
-    echo "Code formatting failed. Please fix the issues brfore committing."
+    echo "Code formatting failed. Please fix the issues before committing."
     exit 1
 fi
 

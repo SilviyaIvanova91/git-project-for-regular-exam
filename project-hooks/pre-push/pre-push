@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "Running pre-push hook..."
+
+py -m pip install pytest
+py -m pytest
+
+if [ $? -ne 0 ]; then
+    echo "Test failed. Please fix the issues brfore pushing."
+    exit 1
+fi
+
+echo "All tests passed. Proceeding with push."
+exit 0
