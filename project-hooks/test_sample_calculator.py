@@ -11,5 +11,3 @@ def test_substract():
     assert substract(5, 3) == 2
     assert substract(-1, -1) == 0
     assert substract(0, 5) == -5
-
-
