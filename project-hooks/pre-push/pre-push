@@ -10,5 +10,5 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "✅ All tests passed. Proceeding with push.""
+echo "✅ All tests passed. Proceeding with push."
 exit 0
