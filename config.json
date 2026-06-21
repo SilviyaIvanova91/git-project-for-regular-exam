@@ -1,4 +1,4 @@
 {
-  "environment": "staging",
-  "theme": "light"
+  "environment": "production",
+  "theme": "dark"
 }
