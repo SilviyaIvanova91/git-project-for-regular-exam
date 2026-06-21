@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 echo "Running pre-commit hook..."
 
 py -m pip install ruff
